@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,25 +15,205 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
-  color: #61dafb;
+  color: rgb(19, 160, 61)
+} 
+
+.HomePage {
+  background: url(https://i.pinimg.com/originals/9c/6d/41/9c6d418107458b10aac532058f8607c7.jpg) 
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 460px;
+  background-color: #292929;
+  color: #ffffff;
+  font-family: Script typeface, Script typeface, script typeface;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HomePage h1 {
+  font-family: cursive;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  top: 50%;
+  left: 50%;
+  font-size: 8rem;
+  transform: translate(-50%, -50%);
 }
+
+.HomePage h3 {
+  padding: 20px;
+  font-family: 'Script typeface', script typeface;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  font-size: 3em;
+  transform: translate(-50%, -50%);
+}
+
+.NavbarContainer {
+  background-color: rgb(250, 133, 0);
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  margin-left: 0px;
+  /* display: inline-block; */
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+
+.NavbarLink {
+  font-family: cursive;
+  color: #bae5c7;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 75px;
+  font-family: cursive;
+  font-size: 35px;
+}
+
+.NavbarLink:hover {
+  color: rgb(2, 172, 101);
+  text-decoration: none;
+}
+
+.CourseContainer {
+  background-color: rgb(255, 136, 0);
+  color: white;
+  text-transform: uppercase;
+}
+
+.CourseFormContainer {
+  margin: 30px;
+  padding: 100px;
+  background-color: rgb(161, 88, 4);
+  color: #bae5c7;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+}
+
+.NewCourseButton {
+  justify-content: center;
+  background: rgb(13, 175, 8);
+  /* transition: all 0.3s cubic-bezier(.25,.8,.25,1); */
+  padding: 1px 10px;
+  border-radius: 120px;
+  border: 0px solid #ffffff;
+  text-align: center;
+  font-size: 28px;
+  font-family: script typeface;
+  color: rgb(252, 252, 252);
+}
+.CourseContainer {
+  padding: 20px;
+  color: rgb(25, 184, 46);
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+}
+
+.CourseCard {
+  color: rgb(3, 138, 10);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 17px;
+  float: left;
+  margin: 1.5%;
+  text-align: center;
+  width: 30%;
+  height: 300px;
+  background: #bae5c7;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.CourseCard:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: 'pointer';
+  text-decoration: none;
+}
+
+.CourseForm button {
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+
+.CourseForm h5 {
+text-align: center;
+color: #bae5c7;
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+font-weight: 900;
+font-size: xx-large;
+padding-bottom: 10px;
+}
+
+.CourseImage {
+  align-content: center;
+  height: 200px;
+  width: 400px;
+}
+
+.CourseShow button {
+  background-color: rgb(250, 133, 0);
+  display: inline-block;
+  text-align: center;
+}
+
+.CourseShow {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.ReviewForm button {
+  color: #ffffff;
+  background-color: rgb(250, 133, 0);
+  text-align: center;
+}
+
+.ReviewForm h5 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  padding-bottom: 10px;
+  }
+
+  .ReviewForm {
+    text-align: center;
+  }
+
+  .PlayedButton, .InternationalButton, .DeleteButton {
+    display: block; 
+    margin: 0 auto;
+    width: 200px;
+    transition-duration: 0.4s;
+  }
+
+
