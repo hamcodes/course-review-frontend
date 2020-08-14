@@ -1,8 +1,6 @@
 import React from 'react';
 import { Card, CardBody, CardTitle, CardImg, Button } from 'reactstrap';
 
-
-
 class CourseCard extends React.Component {
 
   state = {

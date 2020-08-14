@@ -13,8 +13,8 @@ const CoursesList = props => {
         <Link key={course.id} to={`/courses/${course.id}`}>
           <Card className = 'CourseCard'>
             <CardBody>
+              <CardImg className='CourseImage' src={course.image} alt={course.name} />  
               <CardTitle>{course.name} - {course.address}</CardTitle>
-              <CardImg className='CourseImage' src={course.image} alt={course.name} />
             </CardBody>
           </Card>
         </Link>

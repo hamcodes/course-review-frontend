@@ -32,13 +32,13 @@ const CourseShow = props => {
           <CardImg className='CourseImage' src={course && course.image} alt={course && course.name} /><br></br>
         </CardBody>
         <Button onClick={handlePlayed} className='PlayedButton' style={{alignItems: 'center' }}>
-          {course && course.played === false ? 'Add to Played' : 'Click if you have played this course!'}
+          {course && course.played === false ? 'Add to Played' : 'Remove from played courses'}
         </Button>
         <Button onClick={handleInternational} className='InternationalButton'>
           {course && course.international === false ? 'Was this an international course?' : 'Remove from international'}
         </Button>
         <Button onClick={handleDelete} className='DeleteButton'>Delete This Course</Button>
-      </Card>
+      </Card><br/>
 
       <Reviews course={course} />
     </div>
