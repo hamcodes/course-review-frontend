@@ -1,17 +1,6 @@
-.App {
-  text-align: center;
-}
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -28,6 +17,11 @@
 .App-link {
   color: rgb(19, 160, 61)
 } 
+
+.App {
+  text-align: center;
+}
+
 
 .HomePage {
   background: url(https://i.pinimg.com/originals/9c/6d/41/9c6d418107458b10aac532058f8607c7.jpg) 
@@ -117,6 +111,12 @@
   background-image: url("https://cdn1.tahoedonner.com/wp-content/uploads/2018/04/11194130/Golf_Header4.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .NewCourseButton {
