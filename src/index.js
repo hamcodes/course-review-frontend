@@ -11,7 +11,6 @@ import './App.css';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-// Create store
 // Use applyMiddleware to enable thunk
 let store = createStore(courseReducer, composeEnhancers(applyMiddleware(thunk)));
 
