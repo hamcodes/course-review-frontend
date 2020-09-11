@@ -9,12 +9,18 @@ import PlayedCourses from '../components/PlayedCourses';
 import International from '../components/International';
 
 class Courses extends React.Component {
+  
 
   componentDidMount() {
-    this.props.fetchCourses()
-  }
+    // console.log('a');
 
+    this.props.fetchCourses()
+    // console.log('b');
+  }
+  
     render() {
+      // console.log(this.props);
+      
         return (
           <div>
             <Switch>
@@ -27,7 +33,11 @@ class Courses extends React.Component {
           </div>
         );
     }
+
+
 }
+
+
 
 const mapStateToProps = state => {
   return {

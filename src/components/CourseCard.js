@@ -7,31 +7,6 @@ class CourseCard extends React.Component {
     likes: 0
   }
 
-  countLikes = () =>  {
-    this.setState ({
-      likes: this.state.likes + 1
-    })
-  }
-
-  callApi = () => {
-    console.log('a')
-    fetch(`http://localhost:3000/courses/1`)
-      .then(res => {
-        console.log(res)
-        if (!res.ok) {
-          throw new Error(res.statusText)
-        } else {
-          console.log('b')
-          return res.json()
-        }
-      })
-      .then(course => console.log('c', course))
-      .catch(error => console.log('d', error))
-      console.log('e')
-
-      // 'a', 'e', 'd'
-  }
-
   render () {
     let {course} = this.props
     return (
@@ -40,7 +15,6 @@ class CourseCard extends React.Component {
           <CardTitle>{course.name} - {course.address}</CardTitle>
           <CardImg className='CourseImage' src={course.image} alt={course.name} />
           <Button onClick={this.countLikes}>Like: {this.state.likes}</Button>
-          <Button onClick={this.callApi}>Call API</Button>
         </CardBody>
       </Card>
     )
@@ -50,3 +24,44 @@ class CourseCard extends React.Component {
 }
 
 export default CourseCard;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // countLikes = () =>  {
+  //   this.setState ({
+  //     likes: this.state.likes + 1
+  //   })
+  // }
+
+  // callApi = () => {
+  //   console.log('a')
+  //   fetch(`http://localhost:3000/courses/1`)
+  //     .then(res => {
+  //       console.log(res)
+  //       if (!res.ok) {
+  //         throw new Error(res.statusText)
+  //       } else {
+  //         console.log('b')
+  //         return res.json()
+  //       }
+  //     })
+  //     .then(course => console.log('c', course))
+  //     .catch(error => console.log('d', error))
+  //     console.log('e')
+
+  //     // 'a', 'e', 'd'
+  // }

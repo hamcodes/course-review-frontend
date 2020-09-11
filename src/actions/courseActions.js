@@ -1,17 +1,21 @@
 export const fetchCourses = () => {
+  console.log('c');
   return (dispatch) => {
     fetch('http://localhost:3000/courses')
     .then(res => res.json())
-    .then(courses => dispatch({
+    .then(courses => {
+      console.log('d');
+      return dispatch({
       type: 'FETCH_COURSES',
       payload: courses
-    }))
+    })})
   };
 };
 
 export const addCourse = (courseData, history, path) => {
   return (dispatch) => {
-    fetch('http://localhost:3000/courses', {
+    console.log(history);
+     fetch('http://localhost:3000/courses', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(courseData)

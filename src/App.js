@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Courses from './containers/Courses';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
+import UserInfo from './components/UserInfo';
 
 class App extends React.Component {
 
@@ -12,6 +13,7 @@ class App extends React.Component {
         <NavBar />
         <Route exact path='/' component={ Home } />
         <Courses />
+        <UserInfo email="email@email.com" username="bob"/>
       </div>
     );
   }

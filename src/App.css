@@ -132,7 +132,7 @@
   color: rgb(252, 252, 252);
 }
 .CourseContainer {
-  padding: 20px;
+  padding: 10px;
   color: rgb(25, 184, 46);
   font-family: Verdana, Geneva, sans-serif;
   text-align: center;
@@ -176,7 +176,7 @@ padding-bottom: 10px;
 .CourseImage {
   align-content: center;
   height: 200px;
-  width: 400px;
+  width: 300px;
 }
 
 .CourseShow button {

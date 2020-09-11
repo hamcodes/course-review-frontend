@@ -21,6 +21,7 @@ class CourseInput extends React.Component {
     e.preventDefault();
     const path = `/courses`;
     this.props.addCourse(this.state, this.props.history, path);
+    
     this.setState({
       name: '',
       address: '',
@@ -33,7 +34,7 @@ class CourseInput extends React.Component {
     return (
       <div className='CourseFormContainer'>
         <Form className='CourseForm' onSubmit={this.handleSubmit}>
-
+        {console.log(this.props)};
           {/* <FormGroup row> */}
           <h5>Add a New Course Below</h5>
           {/* </FormGroup> */}
