@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardBody, CardTitle, CardImg } from 'reactstrap';
-import LikeButton from './LikeButton';
 import SortButton from './SortButton';
 
 class CoursesList extends React.Component {
@@ -26,7 +25,7 @@ class CoursesList extends React.Component {
        return (         
         <div className='CourseContainer'>
           <Link to='/courses/new' className='NewCourseButton' role='button'>Add A New Course</Link>
-          <button onClick={this.sortButton}>Sort</button>
+          {/* <button onClick={this.sortButton}>Sort</button> */}
     
         <h3 style={{color: '#BAE5C7', fontWeight: '700', margin: '20px', font: 'cursive' }}>Courses</h3>
           {courses.map(course =>
@@ -39,16 +38,17 @@ class CoursesList extends React.Component {
                 </CardBody>
                 
               </Card>
-    
+                
             </Link>
             
           )}
           
           
         </div>
+        
       )
     } 
-
+    
 }
 
 

@@ -34,10 +34,8 @@ class CourseInput extends React.Component {
     return (
       <div className='CourseFormContainer'>
         <Form className='CourseForm' onSubmit={this.handleSubmit}>
-        {console.log(this.props)};
-          {/* <FormGroup row> */}
+ 
           <h5>Add a New Course Below</h5>
-          {/* </FormGroup> */}
 
           <FormGroup row>
             <Label for='name' sm={2}>Name of course</Label>

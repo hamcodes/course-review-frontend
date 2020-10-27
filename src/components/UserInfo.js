@@ -29,18 +29,3 @@ class UserInfo extends React.Component {
 }
 
 export default UserInfo;
-
-
-
-
-
-
-// card that shows user name and email
-// the name and email will come from app component
-// coming from the app component, need to pass down name and email as props to this component
-//needs a point attribute that can render under email
-//focus on react
-//making class and function components
-//rendering items, passing props
-//using setState
-//events, buttons that change state, like increment

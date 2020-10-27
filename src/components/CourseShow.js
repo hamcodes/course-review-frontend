@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Card, CardBody, CardTitle, CardImg, Button } from 'reactstrap';
 import Reviews from '../containers/Reviews';
 import { deleteCourse, togglePlayed, toggleInternational } from '../actions/courseActions';
-import LikeButton from './LikeButton';
 
 
 const CourseShow = props => {
@@ -42,7 +41,7 @@ const CourseShow = props => {
       </Card><br/>
 
       <Reviews course={course} />
-      <LikeButton/>
+
     </div>
   );
 };

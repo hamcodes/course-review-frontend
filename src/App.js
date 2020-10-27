@@ -13,7 +13,7 @@ class App extends React.Component {
         <NavBar />
         <Route exact path='/' component={ Home } />
         <Courses />
-        <UserInfo email="email@email.com" username="bob"/>
+        {/* <UserInfo /> */}
       </div>
     );
   }
